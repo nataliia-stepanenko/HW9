@@ -1,14 +1,14 @@
 "use strict"
 // 1
-let myBirthday = new Date(1989, 7, 24);
-let myMonth = myBirthday.getMonth() + 1;
-function month(x) {
-    if (x < 10) {
-        return `0${x}`;
-    } return x;
-}
-let info = `${myBirthday.getDate()}.${month(myMonth)}.${myBirthday.getFullYear()}`;
-alert(info);
+// let myBirthday = new Date(1989, 7, 24);
+// let myMonth = myBirthday.getMonth() + 1;
+// function showZero(x) {
+//     if (x < 10) {
+//         return `0${x}`;
+//     } return x;
+// }
+// let info = `${myBirthday.getDate()}.${showZero(myMonth)}.${myBirthday.getFullYear()}`;
+// alert(info);
 
 
 
@@ -16,7 +16,7 @@ alert(info);
 // function getDiffDays(start, end) {
 //     let dateStart = Date.parse(start);
 //     let dateEnd = Date.parse(end);
-//     let dif = (dateEnd - dateStart) / 86400000;
+//     const DAY_IN_MS = 60 * 60 * 24 * 1000;
 //     if (isNaN(dateEnd) || isNaN(dateStart)) {
 //         console.error(`Error: invalid date`);
 //         return;
@@ -24,6 +24,7 @@ alert(info);
 //         console.error(`Error: your start date is later than end date`);
 //         return;
 //     }
+//     let dif = (dateEnd - dateStart) / DAY_IN_MS;
 //     return dif;
 // }
 
@@ -35,16 +36,16 @@ alert(info);
 
 
 // 3
-// function isWeekend(date) {
-//     let day = (new Date(date)).getDay();
-//     if (day < 6 && day > 0) {
-//         return false;
-//     } return true;
-// }
+function isWeekend(date) {
+    let day = (new Date(date)).getDay();
+    if (day < 6 && day > 0) {
+        return false;
+    } return true;
+}
 
-// console.log(isWeekend('2022-02-12')); // true
-// console.log(isWeekend('2022-02-13')); // true
-// console.log(isWeekend('2022-02-09')); // false
+console.log(isWeekend('2022-02-12')); // true
+console.log(isWeekend('2022-02-13')); // true
+console.log(isWeekend('2022-02-09')); // false
 
 
 
