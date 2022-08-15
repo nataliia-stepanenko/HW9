@@ -36,17 +36,14 @@
 
 
 // 3
-function isWeekend(date) {
-    let day = (new Date(date)).getDay();
-    if (day < 6 && day > 0) {
-        return false;
-    } return true;
-}
+// function isWeekend(date) {
+//     let day = (new Date(date)).getDay();
+//     return day === 6 || day === 0;
+// }
 
-console.log(isWeekend('2022-02-12')); // true
-console.log(isWeekend('2022-02-13')); // true
-console.log(isWeekend('2022-02-09')); // false
-
+// console.log(isWeekend('2022-02-12')); // true
+// console.log(isWeekend('2022-02-13')); // true
+// console.log(isWeekend('2022-02-09')); // false
 
 
 // 4
